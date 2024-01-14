@@ -4,6 +4,7 @@ metadata :
  name : to-do-app1
  labels : 
   app : to-do
+  namespace: grras
 spec : 
  replicas : 2
   selectors :
