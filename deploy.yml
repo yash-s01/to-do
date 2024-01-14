@@ -15,7 +15,7 @@ spec :
      labels :
        app : to-do
     spec :
-      imagePullSecret:
+      imagePullSecrets:
         - name: mydockpasswd
       containers : 
         - name : to-do
