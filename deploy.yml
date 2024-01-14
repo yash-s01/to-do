@@ -1,0 +1,23 @@
+apiVersion : apps/v1
+kind : Deployment
+metadata : 
+ name : to-do-app
+ labels : 
+  app : to-do
+spec : 
+ replicas : 2
+  selectors :
+    matchLabels : 
+     app : to-do
+  template :
+    metadata : 
+     labels :
+       app : to-do
+    spec :
+      imagePullSecret:
+        - name: mydockpasswd
+      containers : 
+        - name : to-do
+          image : yashs07/to_do-app1:BUILD_NUMBER
+          ports:
+            - containerPort : 80
