@@ -6,6 +6,9 @@ metadata :
   app : to-do
   namespace: grras
 spec : 
+ selector: 
+  matchLabels:
+    app : to-do
  replicas : 2 
  template :
     metadata : 
