@@ -21,4 +21,4 @@ spec :
         - name : to-do
           image : yashs07/to_do-app1:BUILD_NUMBER
           ports:
-            - containerPort : 80
+            - containerPort : 30080
